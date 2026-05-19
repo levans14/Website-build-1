@@ -218,8 +218,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   padding: var(--space-xs) 0;
 }
 .nav__mobile .nav__cta {
-  text-align: center;
-  padding: 14px;
+  align-self: flex-start;
+  padding: 10px 18px;
   border-radius: var(--radius);
 }
 

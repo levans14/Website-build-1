@@ -44,7 +44,8 @@
     .t-card__text { font-size:0.9375rem; line-height:1.7; color:var(--color-on-surface); margin-bottom:var(--space-md); }
     .t-card__name { font-weight:600; font-size:0.875rem; color:var(--color-on-surface); }
     /* CTA Banner */
-    .cta-banner { border-radius:var(--radius-lg); padding:var(--space-xl) calc(var(--space-xl) * 1.25); background:linear-gradient(135deg, var(--color-primary) 0%, #1a3818 100%); position:relative; overflow:hidden; }
+    .cta-banner { border-radius:var(--radius-lg); padding:var(--space-lg) var(--space-md); background:linear-gradient(135deg, var(--color-primary) 0%, #1a3818 100%); position:relative; overflow:hidden; }
+    @media(min-width:640px){.cta-banner{padding:var(--space-xl) calc(var(--space-xl) * 1.25);}}
     .cta-banner::before { content:''; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg,transparent 0 18px,rgba(255,255,255,0.05) 18px 19px); }
     .cta-banner__inner { position:relative; display:grid; align-items:center; gap:var(--space-lg); }
     @media(min-width:768px){.cta-banner__inner{grid-template-columns:1.4fr 1fr;}}
