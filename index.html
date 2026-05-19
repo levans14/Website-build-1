@@ -3,229 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E Z Landscaping — Reliable Service &amp; Quality Results | Mint Hill, NC</title>
-  <meta name="description" content="Mint Hill's trusted choice for mowing, shrub trimming, mulch, and leaf cleanup. E Z Landscaping serves Mint Hill and surrounding cities. Call or text Juan or Randy today." />
+  <title>E Z Landscaping — Mint Hill, NC Lawn Care You Can Trust</title>
+  <meta name="description" content="Mowing, shrub trimming, mulch and leaf cleanup in Mint Hill and surrounding cities. Free quotes. Call (239) 324-8898." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"E Z Landscaping","telephone":"+1-239-324-8898","email":"juanalvarez540@gmail.com","areaServed":"Mint Hill, NC and surrounding cities","address":{"@type":"PostalAddress","addressLocality":"Mint Hill","addressRegion":"NC","addressCountry":"US"}}
+  </script>
   <style>
-    /* ===== PAGE-SPECIFIC ===== */
-
     /* Hero */
-    .hero {
-      position: relative;
-      min-height: 88vh;
-      display: flex;
-      align-items: center;
-    }
-    .hero__bg {
-      position: absolute;
-      inset: 0;
-    }
-    .hero__bg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .hero__overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, rgba(249,250,242,0.92) 0%, rgba(249,250,242,0.55) 55%, rgba(249,250,242,0.1) 100%);
-    }
-    .hero__content {
-      position: relative;
-      z-index: 2;
-      max-width: 640px;
-    }
-    .hero__content .t-h1 { color: var(--color-on-surface); margin-bottom: var(--space-md); }
-    .hero__content .t-body-lg { color: var(--color-on-surface-variant); margin-bottom: var(--space-lg); }
-    .hero__actions { display: flex; gap: var(--space-md); flex-wrap: wrap; }
-
-    /* Bento grid */
-    .bento {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 300px);
-      gap: var(--space-gutter);
-    }
-    .bento__main {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-    .bento__card {
-      position: relative;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      border: 1px solid var(--color-outline-variant);
-      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    }
-    .bento__card img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.7s ease;
-    }
-    .bento__card:hover img { transform: scale(1.04); }
-    .bento__card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.2) 45%, transparent 70%);
-    }
-    .bento__info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: var(--space-lg);
-      z-index: 2;
-    }
-    .bento__info--sm { padding: var(--space-md); }
-    .bento__eyebrow {
-      display: block;
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--color-primary-fixed);
-      margin-bottom: var(--space-xs);
-    }
-    .bento__title { color: white; margin-bottom: var(--space-sm); }
-    .bento__desc { color: rgba(255,255,255,0.82); max-width: 480px; }
-
-    @media (max-width: 768px) {
-      .bento {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-      }
-      .bento__main { grid-column: 1; grid-row: auto; height: 380px; }
-      .bento__card { height: 240px; }
-    }
-
-    /* Transformation section */
-    .transform-section {
-      background: var(--color-surface-container-low);
-      border-top: 1px solid rgba(194,201,187,0.3);
-      border-bottom: 1px solid rgba(194,201,187,0.3);
-    }
-    .transform-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: var(--space-lg);
-      gap: var(--space-md);
-    }
-    .transform-nav { display: flex; gap: var(--space-xs); }
-    .transform-nav-btn {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 1px solid var(--color-outline);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-on-surface);
-      background: transparent;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .transform-nav-btn:hover { background: var(--color-surface-variant); }
-    .ba-wrapper {
-      position: relative;
-      aspect-ratio: 16/9;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-    }
-    .transform-caption {
-      margin-top: var(--space-md);
-      text-align: center;
-      color: var(--color-on-surface-variant);
-    }
-
-    /* Why Us */
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-lg);
-      align-items: center;
-    }
-    .why-grid__img {
-      border-radius: var(--radius-lg);
-      height: 520px;
-      width: 100%;
-      object-fit: cover;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-    }
-    .why-features { display: flex; flex-direction: column; gap: var(--space-md); }
-    .why-feature { display: flex; gap: var(--space-md); align-items: flex-start; }
-    .why-feature__icon {
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(45, 90, 39, 0.08);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-primary-container);
-      margin-top: 2px;
-    }
-    .why-feature__title { font-family: var(--font-serif); font-size: 1.125rem; font-weight: 600; margin-bottom: 4px; }
-    .why-feature__body { color: var(--color-on-surface-variant); }
-
-    @media (max-width: 768px) {
-      .why-grid { grid-template-columns: 1fr; }
-      .why-grid__img { height: 280px; }
-    }
-
-    /* Form */
-    .form-card {
-      background: white;
-      border: 1px solid var(--color-outline-variant);
-      border-radius: var(--radius-lg);
-      padding: var(--space-xl);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
-    @media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
-    .form-stack { display: flex; flex-direction: column; gap: var(--space-md); }
-
-    /* Trust bar */
-    .trust-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--space-lg);
-      flex-wrap: wrap;
-      padding-block: var(--space-lg);
-      border-top: 1px solid var(--color-outline-variant);
-      border-bottom: 1px solid var(--color-outline-variant);
-    }
-    .trust-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-    }
-    .trust-item__num {
-      font-family: var(--font-serif);
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--color-primary-container);
-      line-height: 1;
-    }
-    .trust-item__label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-secondary);
-    }
-    .trust-sep { width: 1px; height: 48px; background: var(--color-outline-variant); }
-    @media (max-width: 600px) { .trust-sep { display: none; } }
+    .hero { position:relative; min-height:88vh; display:flex; align-items:center; }
+    .hero__bg { position:absolute; inset:0; }
+    .hero__bg img { width:100%; height:100%; object-fit:cover; }
+    .hero__overlay { position:absolute; inset:0; background:linear-gradient(to right, rgba(249,250,242,0.94) 0%, rgba(249,250,242,0.65) 55%, rgba(249,250,242,0.15) 100%); }
+    .hero__content { position:relative; z-index:2; max-width:680px; }
+    .hero__badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.85); border:1px solid var(--color-outline-variant); border-radius:999px; padding:4px 14px; font-size:0.75rem; font-weight:600; color:var(--color-secondary); margin-bottom:var(--space-md); }
+    .hero__badge-dot { width:6px; height:6px; border-radius:50%; background:var(--color-primary); flex-shrink:0; }
+    .hero__actions { display:flex; gap:var(--space-md); flex-wrap:wrap; margin-top:var(--space-lg); }
+    .hero__stars { display:flex; align-items:center; gap:8px; margin-top:var(--space-md); font-size:0.875rem; color:var(--color-secondary); }
+    .star { color:var(--color-primary); }
+    /* Service cards */
+    .service-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:var(--space-md); }
+    @media(max-width:900px){.service-cards{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:560px){.service-cards{grid-template-columns:1fr;}}
+    .svc-card { background:white; border:1px solid var(--color-outline-variant); border-radius:var(--radius-lg); padding:var(--space-gutter); transition:border-color 0.2s,box-shadow 0.2s; }
+    .svc-card:hover { border-color:rgba(21,66,18,0.35); box-shadow:0 4px 20px rgba(0,0,0,0.07); }
+    .svc-card__icon { width:44px; height:44px; border-radius:var(--radius-sm); background:var(--color-surface-variant); display:flex; align-items:center; justify-content:center; color:var(--color-primary); transition:background 0.2s,color 0.2s; margin-bottom:var(--space-md); }
+    .svc-card:hover .svc-card__icon { background:var(--color-primary); color:white; }
+    .svc-card__title { font-family:var(--font-serif); font-size:1.25rem; font-weight:600; margin-bottom:var(--space-sm); }
+    .svc-card__desc { color:var(--color-secondary); font-size:0.875rem; line-height:1.6; }
+    /* Section split header */
+    .section-header--split { display:flex; align-items:flex-end; justify-content:space-between; gap:var(--space-md); flex-wrap:wrap; margin-bottom:var(--space-lg); }
+    /* Testimonials */
+    .testimonials-bg { background:var(--color-surface-container-low); }
+    .testimonial-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-md); margin-top:var(--space-lg); }
+    @media(max-width:700px){.testimonial-grid{grid-template-columns:1fr;}}
+    .t-card { background:white; border:1px solid var(--color-outline-variant); border-radius:var(--radius-lg); padding:var(--space-xl); position:relative; }
+    .t-card__quote { position:absolute; top:20px; right:20px; font-size:32px; color:rgba(21,66,18,0.15); line-height:1; }
+    .t-card__stars { display:flex; gap:2px; margin-bottom:var(--space-md); }
+    .t-card__text { font-size:0.9375rem; line-height:1.7; color:var(--color-on-surface); margin-bottom:var(--space-md); }
+    .t-card__name { font-weight:600; font-size:0.875rem; color:var(--color-on-surface); }
+    /* CTA Banner */
+    .cta-banner { border-radius:var(--radius-lg); padding:var(--space-xl) calc(var(--space-xl) * 1.25); background:linear-gradient(135deg, var(--color-primary) 0%, #1a3818 100%); position:relative; overflow:hidden; }
+    .cta-banner::before { content:''; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg,transparent 0 18px,rgba(255,255,255,0.05) 18px 19px); }
+    .cta-banner__inner { position:relative; display:grid; align-items:center; gap:var(--space-lg); }
+    @media(min-width:768px){.cta-banner__inner{grid-template-columns:1.4fr 1fr;}}
+    .cta-banner__title { font-family:var(--font-serif); font-size:2.25rem; font-weight:600; color:white; margin-bottom:var(--space-sm); line-height:1.2; }
+    @media(min-width:640px){.cta-banner__title{font-size:2.75rem;}}
+    .cta-banner__sub { color:rgba(255,255,255,0.88); }
+    .cta-banner__btns { display:flex; flex-direction:column; gap:var(--space-sm); }
+    .btn-w { display:inline-flex; align-items:center; justify-content:center; gap:8px; background:white; color:var(--color-on-surface); border-radius:999px; padding:12px 20px; font-size:0.875rem; font-weight:600; transition:background 0.2s; text-decoration:none; }
+    .btn-w:hover { background:rgba(255,255,255,0.9); }
+    .btn-o { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid rgba(255,255,255,0.35); color:white; border-radius:999px; padding:12px 20px; font-size:0.875rem; font-weight:600; transition:background 0.2s; text-decoration:none; }
+    .btn-o:hover { background:rgba(255,255,255,0.1); }
   </style>
 </head>
 <body class="page-body">
@@ -235,23 +66,27 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">E Z Landscaping</a>
       <ul class="nav__links">
-        <li><a href="index.html#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="index.html" class="nav__link active">Home</a></li>
         <li><a href="services.html" class="nav__link">Services</a></li>
-        <li><a href="index.html#about" class="nav__link">About</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
       </ul>
-      <button class="nav__cta" data-modal="quote">Get a Quote</button>
+      <a href="tel:+12393248898" class="nav__cta" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
+        <span class="material-symbols-outlined" style="font-size:16px">phone</span>(239) 324-8898
+      </a>
       <button class="nav__hamburger" id="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
-  <!-- MOBILE NAV -->
   <div class="nav__mobile" id="nav-mobile">
-    <a href="index.html#portfolio" class="nav__link">Portfolio</a>
+    <a href="index.html" class="nav__link active">Home</a>
     <a href="services.html" class="nav__link">Services</a>
-    <a href="index.html#about" class="nav__link">About</a>
-    <button class="nav__cta" data-modal="quote">Get a Quote</button>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="tel:+12393248898" class="nav__cta" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
+      <span class="material-symbols-outlined" style="font-size:16px">phone</span>(239) 324-8898
+    </a>
   </div>
 
   <main>
@@ -260,194 +95,170 @@
     <section class="hero section">
       <div class="hero__bg">
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7-bZWFyfUr0tLkX1uy_vHDJI0e2LJ6jC84QN75B5p7pXHSz_WjHh7b_AEhjkka01HJtfKKspCuzs2i3242dcuZFQyKCSqt9bCNNTYq1MH4huCI45HFqtlxlMOCt7ajZDUHwpfV9bVWlWzkTXoD7AcLnOT5_9-qUf8F0wFJOPcbx-8TsGpSzXOi8Q8rJy-cqd1TFt6KrlLJVUyOLOjX2kcWI9x-lob1XUx0JcCpEAB8pOQyAE5ltm0oZ3NT9oFtLBm4sC7hDcrRLXu"
-          alt="Expansive Pennsylvania Bluestone patio with modern outdoor furniture and lush landscaping"
+          src="assets/images/lawn-care.jpg"
+          alt="Freshly mowed lawn in Mint Hill NC"
           fetchpriority="high"
         />
       </div>
       <div class="hero__overlay"></div>
       <div class="container">
         <div class="hero__content">
-          <h1 class="t-h1 fade-up">Reliable Service and Quality Results.</h1>
-          <p class="t-body-lg fade-up fade-up-delay-1">Serving Mint Hill and surrounding cities with professional mowing, shrub trimming, mulch, and leaf cleanup. Locally owned and committed to results you can count on every time.</p>
+          <div class="hero__badge fade-up">
+            <span class="hero__badge-dot"></span>
+            Serving Mint Hill, NC &amp; surrounding cities
+          </div>
+          <h1 class="t-h1 fade-up fade-up-delay-1">Lawn care that <em style="color:var(--color-primary);font-style:italic">treats your yard</em> like our own.</h1>
+          <p class="t-body-lg fade-up fade-up-delay-2" style="margin-top:var(--space-md);color:var(--color-on-surface-variant)">E Z Landscaping handles all of your lawn care needs — mowing, shrub trimming, mulch, leaf cleanup and more — with the kind of care that turns grass into carpet.</p>
           <div class="hero__actions fade-up fade-up-delay-2">
-            <button class="btn-primary" data-modal="quote">Schedule Consultation</button>
-            <a href="index.html#portfolio" class="btn-ghost">View Portfolio</a>
+            <a href="tel:+12393248898" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none">
+              <span class="material-symbols-outlined" style="font-size:18px">phone</span>(239) 324-8898
+            </a>
+            <a href="contact.html" class="btn-ghost" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none">
+              Request a free quote<span class="material-symbols-outlined" style="font-size:18px">arrow_forward</span>
+            </a>
+          </div>
+          <div class="hero__stars fade-up fade-up-delay-3">
+            <span class="material-symbols-outlined star" style="font-size:18px">star</span>
+            <span class="material-symbols-outlined star" style="font-size:18px">star</span>
+            <span class="material-symbols-outlined star" style="font-size:18px">star</span>
+            <span class="material-symbols-outlined star" style="font-size:18px">star</span>
+            <span class="material-symbols-outlined star" style="font-size:18px">star</span>
+            Loved by neighbors across Mint Hill
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TRUST BAR -->
-    <div class="trust-bar container fade-up" id="about">
-      <div class="trust-item">
-        <span class="material-symbols-outlined" style="font-size:28px;color:var(--color-primary-container)">home_work</span>
-        <span class="trust-item__label">Locally Owned &amp; Operated</span>
-      </div>
-      <div class="trust-sep"></div>
-      <div class="trust-item">
-        <span class="material-symbols-outlined" style="font-size:28px;color:var(--color-primary-container)">history_edu</span>
-        <span class="trust-item__label">15+ Years Experience</span>
-      </div>
-      <div class="trust-sep"></div>
-      <div class="trust-item">
-        <span class="material-symbols-outlined" style="font-size:28px;color:var(--color-primary-container)">grade</span>
-        <span class="trust-item__label">Top-Grade Materials</span>
-      </div>
-      <div class="trust-sep"></div>
-      <div class="trust-item">
-        <span class="material-symbols-outlined" style="font-size:28px;color:var(--color-primary-container)">payments</span>
-        <span class="trust-item__label">Fair &amp; Transparent Pricing</span>
-      </div>
-    </div>
-
-    <!-- SERVICES BENTO -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-header fade-up">
-          <h2 class="t-h2">Mastery in Every Discipline</h2>
-          <p class="t-body-md" style="color:var(--color-on-surface-variant)">From precision arboriculture to structural masonry, our specialized teams execute complex residential projects with absolute proficiency.</p>
-        </div>
-        <div class="bento fade-up fade-up-delay-1">
-          <!-- Large card -->
-          <div class="bento__card bento__main">
-            <img
-              src="assets/images/lawn-care.jpg"
-              alt="Riding lawn mower striping a lush green lawn"
-              loading="lazy"
-              onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCgWjE3MPqp-71Sb5i1yQz82rjmUGBKH1ex6LxwJW76zBsoGa_-URl1zJ9SuIqy0-cfK3Oqm_QRORqeebLe5FINkq7Lg3Ie6lIf4Yoo04tE7fPfsYGAGdLn-2oTCZMW-cLRzgoHs-9WHUh8N7NyVvMt7rbZzYrEVtamTbIUVS0NnxzdTx7sRM1M5XhKEkm7HShrzsYLzKOPdthi_cZZgfAXlKsO5PM-nNWtdFV-mF1t7OB9rLMl8DK7UvFzmNGCWy0uVw7h27gfalzY'"
-            />
-            <div class="bento__info">
-              <span class="bento__eyebrow">Core Service</span>
-              <h3 class="t-h3 bento__title">Mowing &amp; Lawn Care</h3>
-              <p class="t-body-md bento__desc">Reliable, consistent mowing that keeps your lawn clean, healthy, and looking sharp week after week.</p>
-            </div>
-          </div>
-          <!-- Small card 1 -->
-          <div class="bento__card">
-            <img
-              src="assets/images/tree-care.jpg"
-              alt="Professional tree care and removal"
-              loading="lazy"
-            />
-            <div class="bento__info bento__info--sm">
-              <h3 class="t-h3-sm bento__title">Shrub Trimming</h3>
-              <p class="t-body-md bento__desc" style="font-size:0.875rem">Precision shaping for clean curb appeal.</p>
-            </div>
-          </div>
-          <!-- Small card 2 -->
-          <div class="bento__card">
-            <img
-              src="assets/images/mulch.jpg"
-              alt="Before and after fresh mulch installation around tree base"
-              loading="lazy"
-            />
-            <div class="bento__info bento__info--sm">
-              <h3 class="t-h3-sm bento__title">Mulch &amp; Leaf Cleanup</h3>
-              <p class="t-body-md bento__desc" style="font-size:0.875rem">Fresh mulch installs and thorough seasonal cleanups.</p>
-
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center;margin-top:var(--space-lg)" class="fade-up">
-          <a href="services.html" class="btn-ghost">Explore All Services</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY US -->
+    <!-- SERVICES -->
     <section class="section">
       <div class="container">
-        <div class="why-grid">
-          <div class="fade-up">
-            <img
-              class="why-grid__img"
-              src="assets/images/raised-garden-bed.jpg"
-              alt="Stone raised garden bed showing E Z Landscaping craftsmanship"
-              loading="lazy"
-            />
+        <div class="section-header--split">
+          <div>
+            <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-sm)" class="fade-up">Services</p>
+            <h2 class="t-h2 fade-up fade-up-delay-1">For any &amp; all of your lawn care needs</h2>
           </div>
-          <div class="fade-up fade-up-delay-1">
-            <h2 class="t-h2" style="margin-bottom:var(--space-lg)">What Makes Us Different</h2>
-            <div class="why-features">
-              <div class="why-feature">
-                <div class="why-feature__icon">
-                  <span class="material-symbols-outlined">construction</span>
-                </div>
-                <div>
-                  <p class="why-feature__title">All-In-One Services</p>
-                  <p class="t-body-md why-feature__body">Whether you need a simple tree cut or a full foundation repair, we handle it all — saving you time, coordination headaches, and money.</p>
-                </div>
-              </div>
-              <div class="why-feature">
-                <div class="why-feature__icon">
-                  <span class="material-symbols-outlined">map</span>
-                </div>
-                <div>
-                  <p class="why-feature__title">Locally Owned &amp; Operated</p>
-                  <p class="t-body-md why-feature__body">Based in Mint Hill, we know the local climate, soil, and what your lawn needs to thrive. Every job is done right the first time.</p>
-                </div>
-              </div>
-              <div class="why-feature">
-                <div class="why-feature__icon">
-                  <span class="material-symbols-outlined">verified</span>
-                </div>
-                <div>
-                  <p class="why-feature__title">Quality You Can Trust</p>
-                  <p class="t-body-md why-feature__body">Top-grade materials, modern equipment, and a customer-first approach. Our work isn't done until you're fully satisfied — clear communication and fair pricing, always.</p>
-                </div>
-              </div>
+          <a href="services.html" class="fade-up fade-up-delay-1" style="font-size:0.9375rem;font-weight:600;color:var(--color-primary);white-space:nowrap;text-decoration:none">See all services &rarr;</a>
+        </div>
+        <div class="service-cards">
+
+          <div class="svc-card fade-up">
+            <div class="svc-card__icon">
+              <span class="material-symbols-outlined">yard</span>
             </div>
+            <p class="svc-card__title">Lawn Mowing</p>
+            <p class="svc-card__desc">Weekly and bi-weekly mowing tailored to your grass type and growth. Clean edges, blown walkways, and consistent results every visit.</p>
           </div>
+
+          <div class="svc-card fade-up fade-up-delay-1">
+            <div class="svc-card__icon">
+              <span class="material-symbols-outlined">content_cut</span>
+            </div>
+            <p class="svc-card__title">Shrub Trimming</p>
+            <p class="svc-card__desc">Careful shaping of hedges, bushes and small trees to keep your landscape looking intentional and healthy all season long.</p>
+          </div>
+
+          <div class="svc-card fade-up fade-up-delay-2">
+            <div class="svc-card__icon">
+              <span class="material-symbols-outlined">nature</span>
+            </div>
+            <p class="svc-card__title">Mulch Installation</p>
+            <p class="svc-card__desc">Fresh mulch that protects roots, holds moisture and instantly lifts the curb appeal of every bed on your property.</p>
+          </div>
+
+          <div class="svc-card fade-up fade-up-delay-3">
+            <div class="svc-card__icon">
+              <span class="material-symbols-outlined">eco</span>
+            </div>
+            <p class="svc-card__title">Leaf Cleanup</p>
+            <p class="svc-card__desc">Seasonal leaf removal so your lawn can breathe through fall and stay healthy heading into winter.</p>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- LEAD CAPTURE FORM -->
-    <section class="section" id="contact">
-      <div class="container" style="max-width:760px">
-        <div class="form-card fade-up">
-          <div class="section-header" style="margin-bottom:var(--space-lg)">
-            <h2 class="t-h2">Initiate Your Project</h2>
-            <p class="t-body-md" style="color:var(--color-on-surface-variant)">Provide the details below, and our project management team will contact you within 24 hours.</p>
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-bg">
+      <div class="container">
+        <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-sm)" class="fade-up">Reviews</p>
+        <h2 class="t-h2 fade-up fade-up-delay-1">Recommended by neighbors</h2>
+        <p class="t-body-md fade-up fade-up-delay-1" style="color:var(--color-secondary);margin-top:var(--space-sm)">Real recommendations from customers on our Facebook page.</p>
+        <div class="testimonial-grid">
+
+          <figure class="t-card fade-up">
+            <span class="t-card__quote">&ldquo;</span>
+            <div class="t-card__stars">
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+            </div>
+            <blockquote class="t-card__text">&ldquo;Provided quote in timely manner — no BS, no fuss. He listened and completely delivered.&rdquo;</blockquote>
+            <figcaption class="t-card__name">Keyser Shore</figcaption>
+          </figure>
+
+          <figure class="t-card fade-up fade-up-delay-1">
+            <span class="t-card__quote">&ldquo;</span>
+            <div class="t-card__stars">
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+            </div>
+            <blockquote class="t-card__text">&ldquo;Great work and a fair price. My yard looks better than it ever has. Will definitely be calling them back.&rdquo;</blockquote>
+            <figcaption class="t-card__name">Maria T.</figcaption>
+          </figure>
+
+          <figure class="t-card fade-up">
+            <span class="t-card__quote">&ldquo;</span>
+            <div class="t-card__stars">
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+            </div>
+            <blockquote class="t-card__text">&ldquo;These guys show up on time every time. My lawn has never looked this good. Highly recommend to anyone in the area.&rdquo;</blockquote>
+            <figcaption class="t-card__name">David R.</figcaption>
+          </figure>
+
+          <figure class="t-card fade-up fade-up-delay-1">
+            <span class="t-card__quote">&ldquo;</span>
+            <div class="t-card__stars">
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+              <span class="material-symbols-outlined star" style="font-size:16px">star</span>
+            </div>
+            <blockquote class="t-card__text">&ldquo;Fast, professional and affordable. They did our mulch and shrub trimming and it completely transformed the front yard. Love it.&rdquo;</blockquote>
+            <figcaption class="t-card__name">Sandra K.</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner fade-up">
+          <div class="cta-banner__inner">
+            <div>
+              <p class="cta-banner__title">Ready for a yard you're proud of?</p>
+              <p class="cta-banner__sub">Call or text us to schedule your free quote. We serve Mint Hill, NC and all surrounding cities.</p>
+            </div>
+            <div class="cta-banner__btns">
+              <a href="tel:+12393248898" class="btn-w">
+                <span class="material-symbols-outlined" style="font-size:18px">phone</span>(239) 324-8898
+              </a>
+              <a href="mailto:juanalvarez540@gmail.com" class="btn-o">
+                <span class="material-symbols-outlined" style="font-size:18px">mail</span>juanalvarez540@gmail.com
+              </a>
+            </div>
           </div>
-          <form class="form-stack" novalidate>
-            <div class="form-grid">
-              <div>
-                <label class="form-label" for="first-name">First Name</label>
-                <input class="form-input" id="first-name" type="text" required />
-              </div>
-              <div>
-                <label class="form-label" for="last-name">Last Name</label>
-                <input class="form-input" id="last-name" type="text" required />
-              </div>
-            </div>
-            <div>
-              <label class="form-label" for="email">Email Address</label>
-              <input class="form-input" id="email" type="email" required />
-            </div>
-            <div>
-              <label class="form-label" for="phone">Phone Number</label>
-              <input class="form-input" id="phone" type="tel" />
-            </div>
-            <div>
-              <label class="form-label" for="project-type">Project Type</label>
-              <select class="form-input" id="project-type">
-                <option value="">Select a service...</option>
-                <option>Mowing</option>
-                <option>Shrub Trimming</option>
-                <option>Mulch</option>
-                <option>Leaf Cleanup</option>
-              </select>
-            </div>
-            <div>
-              <label class="form-label" for="details">Project Details</label>
-              <textarea class="form-input" id="details" rows="4"></textarea>
-            </div>
-            <button class="btn-primary" type="submit" style="width:100%;justify-content:center;padding:18px">
-              Request Consultation
-            </button>
-          </form>
         </div>
       </div>
     </section>
@@ -459,174 +270,34 @@
     <div class="footer__grid">
       <div>
         <p class="footer__brand">E Z Landscaping</p>
-        <p class="footer__copy">© 2026 E Z Landscaping.<br>Mint Hill, NC<br><a href="tel:2393248898" class="footer__link">Juan: (239) 324-8898</a><br><a href="tel:7048146548" class="footer__link">Randy: (704) 814-6548</a></p>
-        <p class="footer__copy" style="margin-top:8px">Call or Text Anytime</p>
+        <p class="footer__copy">Full-service lawn care in Mint Hill, NC and surrounding cities.</p>
       </div>
       <div>
-        <p class="footer__col-title">Services</p>
+        <p class="footer__col-title">Contact</p>
         <ul class="footer__links">
-          <li><a href="services.html#mowing" class="footer__link">Mowing</a></li>
-          <li><a href="services.html#shrub-trimming" class="footer__link">Shrub Trimming</a></li>
-          <li><a href="services.html#mulch" class="footer__link">Mulch</a></li>
-          <li><a href="services.html#leaf-cleanup" class="footer__link">Leaf Cleanup</a></li>
+          <li><a href="tel:+12393248898" class="footer__link">(239) 324-8898</a></li>
+          <li><a href="mailto:juanalvarez540@gmail.com" class="footer__link">juanalvarez540@gmail.com</a></li>
+          <li><span style="color:var(--color-secondary);font-size:0.875rem">Mint Hill, NC &amp; surrounding cities</span></li>
         </ul>
       </div>
       <div>
-        <p class="footer__col-title">Company</p>
+        <p class="footer__col-title">Explore</p>
         <ul class="footer__links">
-          <li><a href="index.html#contact" class="footer__link">Contact</a></li>
-          <li><a href="#" class="footer__link">Privacy Policy</a></li>
-          <li><a href="#" class="footer__link">Accessibility</a></li>
+          <li><a href="services.html" class="footer__link">Services</a></li>
+          <li><a href="about.html" class="footer__link">About</a></li>
+          <li><a href="contact.html" class="footer__link">Get a Quote</a></li>
+          <li><a href="https://www.facebook.com/EZLanscapers/" target="_blank" rel="noreferrer" class="footer__link">Facebook</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
   <!-- STICKY CTA -->
-  <button class="sticky-cta" data-modal="quote">
-    <span class="material-symbols-outlined">edit_document</span>
-    Get a Quote
-  </button>
+  <a href="tel:+12393248898" class="sticky-cta" style="text-decoration:none">
+    <span class="material-symbols-outlined">phone</span>
+    Call now
+  </a>
 
-  <!-- QUOTE MODAL -->
-  <div id="quote-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;backdrop-filter:blur(4px)"
-       class="quote-overlay"></div>
-  <div id="quote-modal" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
-       background:white;border-radius:8px;padding:40px;width:min(520px,90vw);z-index:201;
-       box-shadow:0 24px 64px rgba(0,0,0,0.2);overflow-y:auto;max-height:90vh">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
-      <h2 class="t-h3">Get a Quote</h2>
-      <button id="modal-close" aria-label="Close" style="padding:4px;color:var(--color-secondary)">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-    </div>
-    <form class="form-stack" novalidate>
-      <div class="form-grid">
-        <div>
-          <label class="form-label" for="m-first">First Name</label>
-          <input class="form-input" id="m-first" type="text" required />
-        </div>
-        <div>
-          <label class="form-label" for="m-last">Last Name</label>
-          <input class="form-input" id="m-last" type="text" required />
-        </div>
-      </div>
-      <div>
-        <label class="form-label" for="m-email">Email</label>
-        <input class="form-input" id="m-email" type="email" required />
-      </div>
-      <div>
-        <label class="form-label" for="m-service">Service</label>
-        <select class="form-input" id="m-service">
-          <option value="">Select...</option>
-          <option>Mowing</option>
-          <option>Shrub Trimming</option>
-          <option>Mulch</option>
-          <option>Leaf Cleanup</option>
-        </select>
-      </div>
-      <div>
-        <label class="form-label" for="m-details">Details</label>
-        <textarea class="form-input" id="m-details" rows="3"></textarea>
-      </div>
-      <button class="btn-primary" type="submit" style="width:100%;justify-content:center;padding:16px">
-        Submit Request
-      </button>
-    </form>
-  </div>
-
-  <script>
-    // Modal show/hide uses CSS display toggling
-    document.querySelectorAll('[data-modal="quote"]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.getElementById('quote-modal').style.display = 'block';
-        document.getElementById('quote-overlay').style.display = 'block';
-        document.body.style.overflow = 'hidden';
-      });
-    });
-    document.getElementById('quote-overlay').addEventListener('click', closeModal);
-    document.getElementById('modal-close').addEventListener('click', closeModal);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-    function closeModal() {
-      document.getElementById('quote-modal').style.display = 'none';
-      document.getElementById('quote-overlay').style.display = 'none';
-      document.body.style.overflow = '';
-    }
-    const EDGE_FN = 'https://jsqeobmrjaiwduvwevih.supabase.co/functions/v1/submit-lead';
-
-    async function postLead(payload, onSuccess, onError) {
-      try {
-        const res = await fetch(EDGE_FN, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-        if (!res.ok) throw new Error('Server error');
-        onSuccess();
-      } catch {
-        onError();
-      }
-    }
-
-    // Quote modal form
-    document.getElementById('quote-modal').querySelector('form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = e.currentTarget;
-      const btn = form.querySelector('button[type=submit]');
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-
-      const payload = {
-        type: 'quote',
-        name: (document.getElementById('m-first').value + ' ' + document.getElementById('m-last').value).trim(),
-        email: document.getElementById('m-email').value.trim(),
-        service: document.getElementById('m-service').value,
-        message: document.getElementById('m-details').value.trim()
-      };
-
-      postLead(payload, () => {
-        form.innerHTML = `
-          <div style="text-align:center;padding:32px 0">
-            <span class="material-symbols-outlined" style="font-size:52px;color:var(--color-primary);display:block;margin-bottom:16px">check_circle</span>
-            <p class="t-h3" style="margin-bottom:8px;font-family:var(--font-serif)">Request Received</p>
-            <p class="t-body-md" style="color:var(--color-secondary)">We'll contact you within 24 hours.</p>
-          </div>`;
-        setTimeout(closeModal, 2800);
-      }, () => {
-        btn.textContent = 'Get My Free Quote';
-        btn.disabled = false;
-        btn.insertAdjacentHTML('afterend', '<p style="color:red;font-size:14px;margin-top:8px">Something went wrong — please try again.</p>');
-      });
-    });
-
-    // Contact / consultation form
-    document.querySelector('#contact form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = e.currentTarget;
-      const btn = form.querySelector('button[type=submit]');
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-
-      const payload = {
-        type: 'consultation',
-        name: (document.getElementById('first-name').value + ' ' + document.getElementById('last-name').value).trim(),
-        email: document.getElementById('email').value.trim(),
-        phone: document.getElementById('phone').value.trim(),
-        service: document.getElementById('project-type').value,
-        message: document.getElementById('details').value.trim()
-      };
-
-      postLead(payload, () => {
-        btn.textContent = 'Request Sent!';
-        btn.style.background = 'var(--color-surface-tint)';
-        setTimeout(() => { btn.textContent = 'Request Consultation'; btn.style.background = ''; btn.disabled = false; }, 3000);
-      }, () => {
-        btn.textContent = 'Request Consultation';
-        btn.disabled = false;
-        btn.insertAdjacentHTML('afterend', '<p style="color:red;font-size:14px;margin-top:8px">Something went wrong — please try again.</p>');
-      });
-    });
-  </script>
   <script src="assets/main.js"></script>
 </body>
 </html>

@@ -98,23 +98,27 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">E Z Landscaping</a>
       <ul class="nav__links">
-        <li><a href="index.html#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="services.html" class="nav__link active">Services</a></li>
-        <li><a href="index.html#about" class="nav__link">About</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
       </ul>
-      <button class="nav__cta" data-modal="quote">Get a Quote</button>
+      <a href="tel:+12393248898" class="nav__cta" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
+        <span class="material-symbols-outlined" style="font-size:16px">phone</span>(239) 324-8898
+      </a>
       <button class="nav__hamburger" id="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
-  <!-- MOBILE NAV -->
   <div class="nav__mobile" id="nav-mobile">
-    <a href="index.html#portfolio" class="nav__link">Portfolio</a>
+    <a href="index.html" class="nav__link">Home</a>
     <a href="services.html" class="nav__link active">Services</a>
-    <a href="index.html#about" class="nav__link">About</a>
-    <button class="nav__cta" data-modal="quote">Get a Quote</button>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="tel:+12393248898" class="nav__cta" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
+      <span class="material-symbols-outlined" style="font-size:16px">phone</span>(239) 324-8898
+    </a>
   </div>
 
   <main>
@@ -213,34 +217,33 @@
     <div class="footer__grid">
       <div>
         <p class="footer__brand">E Z Landscaping</p>
-        <p class="footer__copy">© 2026 E Z Landscaping.<br>Mint Hill, NC<br><a href="tel:2393248898" class="footer__link">Juan: (239) 324-8898</a><br><a href="tel:7048146548" class="footer__link">Randy: (704) 814-6548</a></p>
-        <p class="footer__copy" style="margin-top:8px">Call or Text Anytime</p>
+        <p class="footer__copy">Full-service lawn care in Mint Hill, NC and surrounding cities.</p>
       </div>
       <div>
-        <p class="footer__col-title">Services</p>
+        <p class="footer__col-title">Contact</p>
         <ul class="footer__links">
-          <li><a href="services.html#mowing" class="footer__link">Mowing</a></li>
-          <li><a href="services.html#shrub-trimming" class="footer__link">Shrub Trimming</a></li>
-          <li><a href="services.html#mulch" class="footer__link">Mulch</a></li>
-          <li><a href="services.html#leaf-cleanup" class="footer__link">Leaf Cleanup</a></li>
+          <li><a href="tel:+12393248898" class="footer__link">(239) 324-8898</a></li>
+          <li><a href="mailto:juanalvarez540@gmail.com" class="footer__link">juanalvarez540@gmail.com</a></li>
+          <li><span style="color:var(--color-secondary);font-size:0.875rem">Mint Hill, NC &amp; surrounding cities</span></li>
         </ul>
       </div>
       <div>
-        <p class="footer__col-title">Company</p>
+        <p class="footer__col-title">Explore</p>
         <ul class="footer__links">
-          <li><a href="index.html#contact" class="footer__link">Contact</a></li>
-          <li><a href="#" class="footer__link">Privacy Policy</a></li>
-          <li><a href="#" class="footer__link">Accessibility</a></li>
+          <li><a href="services.html" class="footer__link">Services</a></li>
+          <li><a href="about.html" class="footer__link">About</a></li>
+          <li><a href="contact.html" class="footer__link">Get a Quote</a></li>
+          <li><a href="https://www.facebook.com/EZLanscapers/" target="_blank" rel="noreferrer" class="footer__link">Facebook</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
   <!-- STICKY CTA -->
-  <button class="sticky-cta" data-modal="quote">
-    <span class="material-symbols-outlined">edit_document</span>
-    Get a Quote
-  </button>
+  <a href="tel:+12393248898" class="sticky-cta" style="text-decoration:none">
+    <span class="material-symbols-outlined">phone</span>
+    Call now
+  </a>
 
   <!-- QUOTE MODAL -->
   <div id="quote-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;backdrop-filter:blur(4px)"></div>

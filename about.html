@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — E Z Landscaping | Mint Hill, NC</title>
+  <meta name="description" content="E Z Landscaping is a local lawn care company serving Mint Hill, NC and surrounding cities. We treat every yard like our own." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .page-hero { background:var(--color-surface-container-low); padding-block:var(--space-xl); border-bottom:1px solid var(--color-outline-variant); }
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-md); margin-top:var(--space-lg); }
+    @media(max-width:700px){.values-grid{grid-template-columns:1fr;}}
+    .value-card { border:1px solid var(--color-outline-variant); border-radius:var(--radius-lg); padding:var(--space-xl); background:white; }
+    .value-card__icon { width:44px; height:44px; border-radius:var(--radius-sm); background:var(--color-surface-variant); display:flex; align-items:center; justify-content:center; color:var(--color-primary); margin-bottom:var(--space-md); }
+    .promise-card { border:1px solid var(--color-outline-variant); border-radius:var(--radius-lg); padding:var(--space-xl); background:white; display:grid; gap:var(--space-lg); margin-top:calc(var(--space-xl) * 1.2); }
+    @media(min-width:700px){.promise-card{grid-template-columns:1.2fr 1fr; padding:calc(var(--space-xl) * 1.5);}}
+    .promise-card__quote { margin-top:var(--space-md); font-style:italic; color:var(--color-on-surface); line-height:1.7; }
+    .promise-card__actions { background:var(--color-surface-variant); border-radius:var(--radius-sm); padding:var(--space-lg); display:flex; flex-direction:column; gap:var(--space-sm); justify-content:center; }
+  </style>
+</head>
+<body class="page-body">
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">E Z Landscaping</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="about.html" class="nav__link active">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="tel:+12393248898" class="nav__cta" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
+        <span class="material-symbols-outlined" style="font-size:16px">phone</span>(239) 324-8898
+      </a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-expanded="false" aria-controls="nav-mobile" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="nav-mobile">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="services.html" class="nav__link">Services</a>
+    <a href="about.html" class="nav__link active">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="tel:+12393248898" class="nav__cta" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none">
+      <span class="material-symbols-outlined" style="font-size:16px">phone</span>(239) 324-8898
+    </a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-sm)" class="fade-up">About</p>
+        <h1 class="t-h1 fade-up fade-up-delay-1">A local crew that treats every yard like our own.</h1>
+        <p class="t-body-lg fade-up fade-up-delay-2" style="color:var(--color-on-surface-variant);margin-top:var(--space-md);max-width:640px">E Z Landscaping is a local lawn care company serving Mint Hill, NC and the surrounding cities. We're the guys neighbors call when they want a yard that looks intentional, healthy, and cared for week after week.</p>
+      </div>
+    </section>
+
+    <!-- VALUES + PROMISE -->
+    <section class="section">
+      <div class="container">
+
+        <div class="values-grid">
+
+          <div class="value-card fade-up">
+            <div class="value-card__icon">
+              <span class="material-symbols-outlined">favorite</span>
+            </div>
+            <p class="t-h3-sm" style="margin-bottom:var(--space-sm)">We care for your yard</p>
+            <p class="t-body-md" style="color:var(--color-secondary)">We don't just maintain it — we look after it like it's our own.</p>
+          </div>
+
+          <div class="value-card fade-up fade-up-delay-1">
+            <div class="value-card__icon">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <p class="t-h3-sm" style="margin-bottom:var(--space-sm)">Easy to work with</p>
+            <p class="t-body-md" style="color:var(--color-secondary)">Quotes delivered in a timely manner. No BS, no fuss. We show up when we say we will.</p>
+          </div>
+
+          <div class="value-card fade-up fade-up-delay-2">
+            <div class="value-card__icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <p class="t-h3-sm" style="margin-bottom:var(--space-sm)">Local to Mint Hill</p>
+            <p class="t-body-md" style="color:var(--color-secondary)">Proudly servicing Mint Hill, NC and surrounding cities.</p>
+          </div>
+
+        </div>
+
+        <!-- PROMISE CARD -->
+        <div class="promise-card fade-up">
+          <div>
+            <h2 class="t-h2" style="margin-bottom:var(--space-md)">Our promise</h2>
+            <p class="t-body-lg" style="color:var(--color-on-surface-variant)">Show up, listen, and deliver. That's it. Whether your yard is overgrown and needs a reset or you want consistent weekly mowing, you'll get honest communication and quality work every time.</p>
+            <p class="promise-card__quote">&ldquo;Provided quote in timely manner — no BS, no fuss. He listened and completely delivered.&rdquo;<br><strong style="font-style:normal;font-size:0.875rem;margin-top:8px;display:block">— Keyser Shore</strong></p>
+          </div>
+          <div class="promise-card__actions">
+            <h3 class="t-h3-sm" style="margin-bottom:var(--space-sm)">Get in touch</h3>
+            <a href="tel:+12393248898" class="btn-primary" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none">
+              <span class="material-symbols-outlined" style="font-size:18px">phone</span>(239) 324-8898
+            </a>
+            <a href="contact.html" class="btn-ghost" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none">
+              Request a quote
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">E Z Landscaping</p>
+        <p class="footer__copy">Full-service lawn care in Mint Hill, NC and surrounding cities.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Contact</p>
+        <ul class="footer__links">
+          <li><a href="tel:+12393248898" class="footer__link">(239) 324-8898</a></li>
+          <li><a href="mailto:juanalvarez540@gmail.com" class="footer__link">juanalvarez540@gmail.com</a></li>
+          <li><span style="color:var(--color-secondary);font-size:0.875rem">Mint Hill, NC &amp; surrounding cities</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Explore</p>
+        <ul class="footer__links">
+          <li><a href="services.html" class="footer__link">Services</a></li>
+          <li><a href="about.html" class="footer__link">About</a></li>
+          <li><a href="contact.html" class="footer__link">Get a Quote</a></li>
+          <li><a href="https://www.facebook.com/EZLanscapers/" target="_blank" rel="noreferrer" class="footer__link">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY CTA -->
+  <a href="tel:+12393248898" class="sticky-cta" style="text-decoration:none">
+    <span class="material-symbols-outlined">phone</span>
+    Call now
+  </a>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
